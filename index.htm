@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+		<header>
+			<nav class="navbar" aria-label="Main Navigation">
+				<div class="logo">My Portfolio</div>
+				<button class="hamburger" id="hamburger" aria-label="Open navigation menu" aria-expanded="false">
+					<span></span>
+					<span></span>
+					<span></span>
+				</button>
+				<ul class="nav-links" id="nav-links">
+					<li><a href="#home">Home</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#skills">Skills</a></li>
+					<li><a href="#projects">Projects</a></li>
+					<li><a href="#contacts">Contacts</a></li>
+					<li><a href="#testimonials">Testimonials</a></li>
+				</ul>
+			</nav>
+		</header>
+
+	<section id="home" class="home-section">
+		<div class="video-bg">
+			<video autoplay muted loop id="bg-video">
+				<source src="/13201629_3840_2160_24fps.mp4" type="video/mp4">
+				Your browser does not support the video tag.
+			</video>
+			<div class="overlay"></div>
+		</div>
+		<div class="home-content">
+			<h1>I am Samuel</h1>
+			<div class="animated-words">
+				<span id="word-display">I'm a Frontend Developer / Web Designer</span>
+			</div>
+		</div>
+	</section>
+
+	<section id="about" class="about-section">
+		<h2>About Me</h2>
+		<div class="about-content">
+			<img src="/pexels-pavel-danilyuk-8294666.jpg" alt="Samuel - Frontend Developer" class="about-img">
+			<div class="about-text">
+				<p>Hello! I'm a passionate frontend web developer with expertise in building interactive and responsive websites. I love creating beautiful user experiences and solving real-world problems with code.</p>
+			</div>
+		</div>
+	</section>
+
+	<section id="skills" class="skills-section">
+		<h2>Skills</h2>
+		<ul class="skills-list">
+			<li>HTML5</li>
+			<li>CSS3</li>
+			<li>JavaScript</li>
+			<li>React</li>
+			<li>Responsive Design</li>
+			<li>Git & GitHub</li>
+		</ul>
+	</section>
+
+	<section id="projects" class="projects-section">
+		<h2>My Projects</h2>
+		<div class="carousel" id="project-carousel">
+			<div class="carousel-track">
+				<div class="carousel-item">
+					<img src="/FoodNook-Restaurant-Cafe-Elementor-Template-Kit.webp" alt="Restaurant and Cafe Website">
+					<h3>Restaurant & Cafe</h3>
+				</div>
+				<div class="carousel-item">
+					<img src="/Protego-Cyber-Security-Services-Elementor-Template-Kit.webp" alt="Cyber Security Website">
+					<h3>Cyber Security Website</h3>
+				</div>
+				<div class="carousel-item">
+					<img src="/Advisium-Consultant-Consulting-Elementor-Template-Kit.webp" alt="Consultant Website">
+					<h3>Responsive Consultant Website</h3>
+				</div>
+			</div>
+			<button class="carousel-btn prev" id="carousel-prev" aria-label="Previous project">&#10094;</button>
+			<button class="carousel-btn next" id="carousel-next" aria-label="Next project">&#10095;</button>
+		</div>
+	</section>
+
+	<section id="contacts" class="contacts-section">
+		<h2>Contact Me</h2>
+		<form class="contact-form">
+			<label for="name">Name:</label>
+			<input type="text" id="name" name="name" placeholder="Your Name" required>
+			<label for="email">Email:</label>
+			<input type="email" id="email" name="email" placeholder="Your Email" required>
+			<button type="submit">Send</button>
+		</form>
+		<div class="contact-info">
+			<p><strong>Phone Number:</strong> +237 679494514</p>
+			<p><strong>Email:</strong> temsamuel414@gmail.com</p>
+		</div>
+	</section>
+
+	<section id="testimonials" class="testimonials-section">
+		<h2>Testimonials</h2>
+		<div class="testimonial-card">
+			<p>"A fantastic developer! Delivered my project on time and exceeded expectations."</p>
+			<span>- Client A</span>
+		</div>
+		<div class="testimonial-card">
+			<p>"Very professional and creative. Highly recommended!"</p>
+			<span>- Client B</span>
+		</div>
+	</section>
+    <script src="script.js"></script>
+</body>
+</html>
+
